@@ -18,7 +18,6 @@ import org.apache.lucene.store.FSDirectory;
 import java.io.*;
 import java.nio.file.Paths;
 
-
 public class Searcher {
 
     public Searcher() {
@@ -60,7 +59,7 @@ public class Searcher {
             QueryParser parser = new QueryParser(field, analyzer);
 
             // read user's query from stdin
-            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             String result = null;
             String[] queries = new String[10];
             queries[0] = "multimodal travel services";

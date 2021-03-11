@@ -1,7 +1,6 @@
 import org.apache.lucene.analysis.Analyzer;
-import org.apache.lucene.analysis.core.KeywordAnalyzer;
-import org.apache.lucene.analysis.core.SimpleAnalyzer;
-import org.apache.lucene.analysis.core.StopAnalyzer;
+import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
+import org.apache.lucene.analysis.custom.CustomAnalyzer;
 import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
@@ -12,7 +11,6 @@ import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.index.IndexWriterConfig.OpenMode;
 import org.apache.lucene.search.similarities.BM25Similarity;
-import org.apache.lucene.search.similarities.BooleanSimilarity;
 import org.apache.lucene.search.similarities.Similarity;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
@@ -30,7 +28,7 @@ public class Indexer {
      */
     public Indexer() throws Exception {
 
-        String txtfile = "documents.txt"; //txt file to be parsed and indexed, it contains one document per line
+        String txtfile = "C:\\Users\\Default.DESKTOP-V5TCGDG\\Desktop\\IR2020-3.1\\documents.txt"; //txt file to be parsed and indexed, it contains one document per line
         String indexLocation = ("index"); //define were to store the index
 
         Date start = new Date();
@@ -40,7 +38,7 @@ public class Indexer {
             Directory dir = FSDirectory.open(Paths.get(indexLocation));
             // define which analyzer to use for the normalization of documents
             Analyzer analyzer = new EnglishAnalyzer(); //TODO
-            Similarity similarity = new BM25Similarity(); //TODO
+            Similarity similarity = new BM25Similarity();
             // configure IndexWriter
             IndexWriterConfig iwc = new IndexWriterConfig(analyzer);
             iwc.setSimilarity(similarity);
@@ -72,20 +70,10 @@ public class Indexer {
     }
 
     /**
-     * Initializes an Indexer
-     */
-    public static void main(String[] args) {
-        try {
-            Indexer indexerDemo = new Indexer();
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-    }
-
-    /**
      * Creates a Doc by adding Fields in it and
      * indexes the Doc with the IndexWriter
-     *  @param indexWriter the indexWriter that will index Doc
+     *
+     * @param indexWriter the indexWriter that will index Doc
      * @param mydoc       the document to be indexed
      */
     private void indexDoc(IndexWriter indexWriter, Doc mydoc) {
@@ -108,7 +96,6 @@ public class Indexer {
 
             if (indexWriter.getConfig().getOpenMode() == OpenMode.CREATE) {
                 // New index, so we just add the document (no old document can be there):
-//                System.out.println("adding " + mydoc);
                 indexWriter.addDocument(doc);
             }
         } catch (Exception e) {

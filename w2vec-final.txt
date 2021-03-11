@@ -1,0 +1,43 @@
+multimodal [multi-modal, modalities, neuroimaging, imaging, perception, speech, fbi, cognitive, stimulation, tactile, facial, modality, virtual, sensorimotor, fmri]
+travel [passengers, trip, ticketing, door-to-door, destination, booking, travellers, passenger, dora, journey, traffic, seamless, traveller]
+services [service, support, management, smes, providers, innovation, users, provision, business, access, infrastructure]
+
+big [analytics, data, data-driven, cloud]
+data [information, big, analytics,analysis]
+mobility [urban, cities, city]
+
+european [europe, eu, international]
+logistics [logistic, transportation, freight, goods, intermodal, last-mile, chain, shipping, planning, supply, providers, cargo, chains, automation]
+applications [application, devices, technologies]
+
+architectures [reconfigurable, computing, architecture]
+big [analytics, data, data-driven, cloud, intelligence, computing, collection, privacy, mining, bigmedilytics, cloud-based, queries, veracity, unstructured, companies]
+data [information, big, analytics, analysis, datasets]
+analytics [big, data, real-time, intelligence, algorithms]
+
+architecture [architectures, hardware, programmability, reconfigurable, computing, heterogeneous, scalable, scalability, exascale, low-power]
+industrial [industry, industries, partners, sectors, manufacturing, consortium, products, sector, production, academic]
+iot [things, internet, smart, cloud, platforms, connected, interoperability, services, ict, end-to-end, security, secure]
+
+mobility-as-a-service [my-trac, car-sharing, last-mile, crowd-sourced, seamless, maas, av-ready, mycorridor, sharing, services, arcadia, city, socialcar, keyless, service]
+tools [methods, techniques, approaches, develop, models, tool, provide, analysis, methodologies, framework, developing, modelling, existing]
+
+fragmentation [fragmented, ecosystem, synergies, bilbao, fragclim, coalescence, mass, atacama, ensuf, era-min, observatory, biodiversity, observations, initiatives]
+iot [things, internet, smart, cloud, platforms, connected, interoperability]
+federation [federated, fed4fire, cloud, testbeds, interoperability, roaming, end-to-end, iot, interoperation, open, orchestration, federations, infrastructure, testbed, deployment]
+
+seamless [interoperability, interoperable, user, end-to-end, users, services, sharing, service, providers, secure, platform, mobile, trusted, user-centric]
+efficient [efficiency, solutions, technologies, generation, highly]
+european [europe, eu, international, countries, national, innovation]
+travelling [travellers, travel, ipco, door-to-door, openings, mobility, cloudfone, nuisance, enclosures, trip, seamless, ionosphere, home, fires, travelers]
+
+cross-domain [interoperability, orchestration, agile, instantiate, 5gex, multi-vendor, iot, sonata, nfv, end-to-end, multi-domain, virtualized, interoperable, middleware, multi-tenancy]
+orchestration [end-to-end, virtualization, nfv, virtualised, multi-tenancy, 5g-ready, 5gpagoda, virtualized, multi-operator, programmability, 5g]
+services [service, support, management]
+
+community [communities, stakeholders, engagement]
+networks [network, communication, communications]
+
+
+
+
